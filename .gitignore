@@ -1,0 +1,3 @@
+# Directory used by Appwrite CLI for local development
+.appwrite
+.env
