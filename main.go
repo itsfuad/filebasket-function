@@ -64,8 +64,8 @@ func Main(Context openruntimes.Context) openruntimes.Response {
 			currentTime := time.Now()
 			diff := currentTime.Sub(createdTime)
 
-			// Check if the file is older than 6 hours
-			if diff.Hours() >= 6 {
+			// Check if the file is older than 3 hours
+			if diff.Hours() >= 3.0 {
 				wg.Add(1)
 				go func(file models.Document) {
 					defer wg.Done()
